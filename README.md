@@ -74,7 +74,7 @@ def run_model(model, tokenizer, sequence, layers=None, device='cpu'):
 custom_chkpt="esm_ft_con.pt"
 
 print('Loading model...')
-model, tokenizer = get_model_and_tokenizer(custom_chkpt, device=device)
+model, tokenizer = get_model_and_tokenizer(custom_chkpt, device='cpu')
 print('Model loaded')
 ```
 
@@ -88,8 +88,8 @@ for record in tqdm(records, total=num_records, desc="Processing sequences"):
     seq_id = record.id
     sequence = str(record.seq)
     # NOTE: embeddings have a start and end padding token
-    embedding = run_model(model, tokenizer, (seq_id, sequence), device=device)
-    assert(len(sequence) == embedding["representations"][layers[1]].size()[1])
+    embedding = run_model(model, tokenizer, (seq_id, sequence), device='cpu')
+    assert(len(sequence) == embedding["representations"][layers[0]].size()[1])
     # Save the embedding
     torch.save(embedding, f"{output_path}/{seq_id}.pt")
 
