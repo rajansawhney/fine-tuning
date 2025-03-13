@@ -6,6 +6,8 @@ Repository to support:
 
 ![Fine-tuning pLMs](images/fig1_ft_arch.png)
 
+Model weights available at:
+https://huggingface.co/rsawhney/fine-tuning-plms
 
 ### Example to generate and load embeddings: 
 
@@ -54,7 +56,6 @@ def run_model(model, tokenizer, sequence, layers=None, device='cpu'):
 
     model.eval()
     with torch.no_grad():
-        # pdb.set_trace()
         try:
             _, _, tokenized_inputs = tokenizer([sequence])
         except Exception as e:
