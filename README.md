@@ -1,8 +1,8 @@
 # Fine-Tuning Protein Language Models
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Repository to support: 
-
-## Fine-Tuning Protein Language Models Unlocks the Potential of Underrepresented Viral Proteomes
+This repository contains PyTorch implementations of fine-tuned protein language models and related scripts for the paper ***Fine-Tuning Protein Language Models Unlocks the Potential of Underrepresented Viral Proteomes*** by Rajan Sawhney, Barbra Ferrell, Thibaut Dejean, Zachary Schreiber,
+William Harrigan, Shawn W. Polson, K. Eric Wommack, and Mahdi Belcaid
 
 ![Fine-tuning pLMs](images/fig1_ft_arch.png)
 
