@@ -4,6 +4,8 @@
 This repository contains PyTorch implementations of fine-tuned protein language models and related scripts for the paper ***Fine-Tuning Protein Language Models Unlocks the Potential of Underrepresented Viral Proteomes*** by Rajan Sawhney, Barbra Ferrell, Thibaut Dejean, Zachary Schreiber,
 William Harrigan, Shawn W. Polson, K. Eric Wommack, and Mahdi Belcaid
 
+[Preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2025.04.17.649224v1)
+
 ![Fine-tuning pLMs](images/fig1_ft_arch.png)
 
 Model weights available at:
